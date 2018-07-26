@@ -1,0 +1,96 @@
+#grid-floats{
+  width: 100%;
+}
+h2{text-align: center;
+clear: both;}
+.grid-item img {
+  width: 25%;
+}
+ #grid-floats .grid-item{
+  width: 23%;
+  float: left;
+  height: 350px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border: 1px solid black;
+  text-align: center;
+  background-color: lightblue;
+}
+#grid-floats .grid-item:nth-child(1){
+  width: 46.8%;
+
+}
+ul{list-style: none;}
+/* using flex */
+#grid-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+#grid-flex .grid-item{
+ width: 23%;
+ float: left;
+ height: 350px;
+ margin-left: 10px;
+ margin-top: 10px;
+ border: 1px solid black;
+ text-align: center;
+ background-color: lightblue;
+}
+#grid-flex .grid-item:nth-child(1){
+  width: 46.8%;
+}
+/* meida query for tablets */
+@media screen and (max-width:1023px) and (min-width:769px){
+#grid-flex{
+  width: 100%;
+}
+#grid-floats{
+  width:100%;
+}
+/* flex */
+#grid-flex .grid-item{
+  width: 30%;
+}
+#grid-flex .grid-item:nth-child(1){
+  width: 45.5%;
+}
+#grid-flex .grid-item:nth-child(2){
+  width: 45.5%;
+}
+/* floats */
+#grid-floats .grid-item{
+  width: 30%;
+}
+#grid-floats .grid-item:nth-child(1){
+  width: 45.5%;
+}
+#grid-floats .grid-item:nth-child(2){
+  width: 45.5%;
+}
+}
+/* media query for phones */
+@media screen  and (max-width:768px){
+  #grid-flex{
+    width: 100%;
+  }
+  #grid-floats{
+    width: 100%;
+  }
+  /* flex */
+  #grid-flex .grid-item{
+    width: 45%;
+  }
+  /* float */
+  #grid-floats .grid-item{
+    width: 45%;
+  }
+  /* flex */
+  #grid-flex .grid-item:nth-child(1){
+    width: 92%;
+  }
+  /* float */
+  #grid-floats .grid-item:nth-child(1){
+    width: 92%;
+  }
+}
+}
